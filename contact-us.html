@@ -3,11 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Mira -  Minimal eCommerce HTML Template</title>
+        <title>Fashion</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
    
 		
 		<!-- all css here -->
@@ -41,7 +40,7 @@
                                             <li><a href="#">pages <i class="pe-7s-angle-down"></i></a>
                                                 <ul>
                                                     <li><a href="shop.html">shop</a></li>
-                                                    <li><a href="cart.html">cart</a></li>
+                                                    <li id="none"><a href="cart.html">cart</a></li>
                                                     <li><a href="login.html">login</a></li>
                                                     <li><a href="register.html">register</a></li>
                                                     <li><a href="preduct-details.html">shop details</a></li>
@@ -49,7 +48,7 @@
                                                 </ul>
                                             </li>
                                             
-                                            <li><a href="shop.html">shop</a></li>
+                                            <li ><a href="shop.html">shop</a></li>
                                           
                                             <li><a href="contact-us.html">CONTACT</a></li>
                                         </ul>
@@ -58,7 +57,7 @@
                             </div>
                             <div class="col-md-3 col-lg-3 col-xs-6 col-sm-6 text-right text-sm text-res">
                                 <div class="cart-user-language">
-                                    <div class="shopping-cart ml-30">
+                                    <div id="none" class="shopping-cart ml-30">
                                         <a class="top-cart" href="cart.html"><i class="pe-7s-cart"></i></a>
                                         <ul>
                                             <li>
@@ -191,13 +190,12 @@
             </div>
             <!-- contact-area end -->
 
-            <!-- footer area start -->
-            <footer class="footer-area">
+              <!-- footer area start -->
+              <footer class="footer-area">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-2 col-sm-5">
                             <div class="footer-logo">
-                                <a href="#"><img src="assets/img/logo/logo.png" alt=""></a>
                                 <p>Lorem ipsum dolor , consectetur adipisicing.</p>
                                 <ul>
                                     <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
@@ -216,32 +214,33 @@
                                         <h3>categories</h3>
                                         <div class="footer-menu">
                                         <ul>
+                                            
                                             <li>
                                                 <a href="preduct-details.html#tabone"  style="margin-right: 100px;">
-                                                    <img src="assets/img/logo/1.png" style="display: inline-block; position: absolute; left: -15px;"> Clothing <span id="nofprod"> (6)</span>
-                                                  </a>
+                                                    <i class="fas fa-tshirt"></i> Clothing <span id="nofprod"> (6)</span>
+                                                    </a>
                                             </li>
                                             <li>
-                                               <a href="preduct-details.html#tabtwo" style="margin-right: 100px;">
-                                                <img src="assets/img/logo/2.png" style="display: inline-block; position: absolute; left: -15px;"> Shoes <span id="nofprod"> (3)</span>
-                                               </a>
+                                                <a href="preduct-details.html#tabtwo" style="margin-right: 100px;">
+                                                <i class="fas fa-boot"></i> Shoes <span id="nofprod"> (3)</span>
+                                                </a>
                                             </li>
                                             <li>
-                                               <a href="preduct-details.html#tabthree"  style="margin-right: 100px;">
-                                                <img src="assets/img/logo/3.png" style="display: inline-block; position: absolute; left: -15px;">Watches <span id="nofprod"> (2)</span>
-                                               </a>
+                                                <a href="preduct-details.html#tabthree"  style="margin-right: 100px;">
+                                                <i class="fas fa-clock"></i> Watches <span id="nofprod"> (2)</span>
+                                                </a>
                                             </li>
                                             <li>
                                                 <a href="preduct-details.html#tabfour"  style="margin-right: 100px;">
-                                                    <img src="assets/img/logo/4.png" style="display: inline-block; position: absolute; left: -15px;">Jewelry <span id="nofprod"> (4)</span>
+                                                    <i class="fas fa-glasses"></i> Accessory <span id="nofprod"> (4)</span>
                                                 </a>
-                                             </li>
+                                                </li>
                                         </ul>
-                                         </div>
+                                            </div>
                                     </div>
-                                 </div>
+                                    </div>
 
-                                 <div class="col-md-4 col-sm-6">
+                                    <div class="col-md-4 col-sm-6">
                                     <div class="footer-title res-mrg">
                                         <h3>Support</h3>
                                         <div class="footer-menu">
@@ -260,18 +259,18 @@
                                         <div class="footer-menu">
                                             <ul>
                                                 <li><a href="login.html">Login</a></li>
-                                                <li><a href="cart.html">My Cart</a></li>
+                                                <li id="none"><a href="cart.html">My Cart</a></li>
                                                 <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li id="none"><a href="checkout.html">Checkout</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                               </div>
-                           </div>         
+                                </div>
+                            </div>         
                         
                         
-                       
+                        
                         <div class="col-md-3 col-sm-12">
                             <div class="footer-title res-mrg-2">
                                 <h3>newsletter</h3>
@@ -291,8 +290,8 @@
                         </p>
                     </div>
                 </div>
-            </footer>
-            <!-- footer area end -->
+             </footer>
+           <!-- footer area end -->
 
             <!-- loginModal -->
             <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
@@ -310,8 +309,8 @@
                                     </div>
                                     <div class="login-form">
                                         <form action="#" method="post">
-                                            <input type="text" name="user-name" placeholder="Username">
-                                            <input type="password" name="user-password" placeholder="Password">
+                                            <input  id="uNameIN" type="text" name="user-name" placeholder="Username">
+                                            <input  id="uPwIN" type="password" name="user-password" placeholder="Password">
                                             <div class="button-box">
                                                 <div class="login-toggle-btn">
                                                     <input type="checkbox" id="remember">
@@ -319,7 +318,7 @@
                                                     <a href="#">Forgot Password?</a><br>
                                                     <p style=" float: right;">Create new account <a href="register.html"><span style="color: blue;">register now</span></a></p>
                                                 </div>
-                                                <button type="submit" class="default-btn floatright">Login</button>
+                                                <button id="login_btn" type="submit" onclick="check()" class="default-btn floatright">Login</button>
                                             </div>
                                         </form>
                                     </div>
@@ -346,6 +345,8 @@
         
 
         <!-- all js here -->
+        <script src="https://kit.fontawesome.com/6c91a9b77e.js" crossorigin="anonymous"></script>
+        <script src="assets/js/login&register.js"></script>
         <script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.meanmenu.js"></script>
@@ -354,7 +355,6 @@
         <script src="assets/js/owl.carousel.min.js"></script>
         <script src="assets/js/jquery.counterup.min.js"></script>
         <script src="assets/js/waypoints.min.js"></script>
-        <script src="assets/js/ajax-mail.js"></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
         <script type="text/javascript" src="assets/js/custom.js"></script>

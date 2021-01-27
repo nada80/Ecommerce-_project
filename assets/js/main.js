@@ -1,3 +1,15 @@
+
+/*---------------------------------------------------------*/
+
+   // $('.user').hide();
+   // $(".user").append("<p>Hello, admin</p> <br/><input type='button' class='logout' value='Log Out' />");
+
+
+
+  
+  
+  
+
 (function($) {
     "use strict";
 

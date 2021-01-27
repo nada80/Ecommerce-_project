@@ -3,11 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Mira -  Minimal eCommerce HTML Template</title>
+        <title>Fashion</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 		
 		<!-- all css here -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -20,6 +19,8 @@
         <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+       
+ 
    <style>
        .fa-trash-alt,.fa-pencil-alt{
            color: #FFF;
@@ -27,7 +28,7 @@
    </style>
    
     </head>
-    <body>
+    <body >
        
         <div class="waraper">
                <!-- ## Header ## -->
@@ -47,7 +48,7 @@
                                             <li><a href="#">pages <i class="pe-7s-angle-down"></i></a>
                                                 <ul>
                                                     <li><a href="shop.html">shop</a></li>
-                                                    <li><a href="cart.html">cart</a></li>
+                                                    <li id="none"><a href="cart.html">cart</a></li>
                                                     <li><a href="login.html">login</a></li>
                                                     <li><a href="register.html">register</a></li>
                                                     <li><a href="preduct-details.html">shop details</a></li>
@@ -64,7 +65,7 @@
                             </div>
                             <div class="col-md-3 col-lg-3 col-xs-6 col-sm-6 text-right text-sm text-res">
                                 <div class="cart-user-language">
-                                    <div class="shopping-cart ml-30">
+                                    <div class="shopping-cart ml-30 user-none" id="none">
                                         <a class="top-cart" href="cart.html"><i class="pe-7s-cart"></i></a>
                                         <ul>
                                             <li>
@@ -160,798 +161,804 @@
                                 </ul>
                         </div>
                    <!-- Tab panes -->
-        <div class="tab-content col-xs-12">
-            <div role="tabpanel" class="pro-info-tab tab-pane fade in active"  id="tabone" >
-                <div class="row mb-40">
-                    <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
-                        <!-- Tab panes -->
-                        <div class="tab-content mb-10">
-                            <div class="pro-large-img tab-pane active" id="pro-large-img-1">
-                                <img src="assets/img/product/1.jpg" alt="" />
-                            </div>
-                     
-                        </div>
-                       
-                    </div>
-                    <!-- QuickView Product Details -->
-                    <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
-                        <div class="product-details section">
-                            <!-- Title -->
-                            <h1 class="title">Dress</h1>
-                            <!-- Price Ratting -->
-                            <div class="price-ratting section">
-                                <!-- Price -->
-                                <span class="price float-left"><span class="new">€ 50.00</span></span>
-                             
-                            </div>
-                            <!-- Short Description -->
-                            <div class="short-desc section">
-                                <h5 class="pd-sub-title">Quick Overview</h5>
-                                <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (4)</span> </p>
-                            </div>
-                            <!-- Product Size -->
-                            <div class="product-size section">
-                                <h5 class="pd-sub-title">Select Size</h5>
-                                <button>s</button>
-                                <button class="active">m</button>
-                                <button>x</button>
-                                <button>xl</button>
-                            </div>
-                            <!-- Product Color -->
-                            <div class="color-list section">
-                                <h5 class="pd-sub-title">Select Color</h5>
-                                <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
-                            </div>
-                          
-
-                            <!-- Quantity Cart -->
-                            <div class="quantity-cart section">
-                                <div class="product-quantity2">
-                                    <input type="text" value="0" id="numOfpeice">
+                    <div class="tab-content col-xs-12">
+                        <div role="tabpanel" class="pro-info-tab tab-pane fade in active"  id="tabone" >
+                            <div class="row mb-40">  
+                                <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
+                                    <!-- Tab panes -->
+                                    <div class="tab-content mb-10">
+                                        <div class="pro-large-img tab-pane active img-magnifier-container"  id="pro-large-img-1">
+                                        
+                                            <img name="Dress$50.00"  id="myimage" src="assets/img/product/1.jpg"  alt="" />
+                                        </div>
+                                
+                                    </div>
+                                
                                 </div>
-                                <button class="add-to-cart" id="addcart">add to cart</button>
-                            </div>
+                                <!-- QuickView Product Details -->
+                                <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
+                                    <div class="product-details section">
+                                        <!-- Title -->
+                                        <h1 id = "pr1" class="title">Dress</h1>
+                                        <!-- Price Ratting -->
+                                        <div class="price-ratting section">
+                                            <!-- Price -->
+                                            <span class="price float-left"><span class="new">€ 50.00</span></span>
+                                        
+                                        </div>
+                                        <!-- Short Description -->
+                                        <div class="short-desc section">
+                                            <h5 class="pd-sub-title">Quick Overview</h5>
+                                            <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (4)</span> </p>
+                                        </div>
+                                        <!-- Product Size -->
+                                        <div class="product-size section">
+                                            <h5 class="pd-sub-title">Select Size</h5>
+                                            <button>s</button>
+                                            <button class="active">m</button>
+                                            <button>x</button>
+                                            <button>xl</button>
+                                        </div>
+                                        <!-- Product Color -->
+                                        <div class="color-list section">
+                                            <h5 class="pd-sub-title">Select Color</h5>
+                                            <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
+                                        </div>
+                                    
 
+                                        <!-- Quantity Cart -->
+                                        <div class="quantity-cart section">
+                                            <div class="product-quantity2">
+                                                <input type="text" value="0" id="numOfpeice">
+                                            </div>
+                                            <button class="add-to-cart" id="addcart" >add to cart</button>
+                                        </div>
+                                
+                                    </div>
+                                </div>
+                            </div>   
                             
-                         
-                         
-                    
-                        </div>
-                    </div>
-                </div>   
-                
-                <div class="row mb-40">
-                    <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
-                        <!-- Tab panes -->
-                        <div class="tab-content mb-10">
-                            <div class="pro-large-img tab-pane active" id="pro-large-img-1">
-                                <img src="assets/img/product/2.jpg" alt="" />
-                            </div>
-                     
-                        </div>
-                       
-                    </div>
-                    <!-- QuickView Product Details -->
-                    <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
-                        <div class="product-details section">
-                            <!-- Title -->
-                            <h1 class="title">Beige Tote</h1>
-                            <!-- Price Ratting -->
-                            <div class="price-ratting section">
-                                <!-- Price -->
-                                <span class="price float-left"><span class="new">€ 80.00</span></span>
-                             
-                            </div>
-                            <div class="short-desc section">
-                                <h5 class="pd-sub-title">Quick Overview</h5>
-                                <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (6)</span> </p>
-                            </div>
-                            <!-- Product Size -->
-                            <div class="product-size section">
-                                <h5 class="pd-sub-title">Select Size</h5>
-                                <button>s</button>
-                                <button class="active">m</button>
-                                <button>x</button>
-                                <button>xl</button>
-                            </div>
-                            <!-- Product Color -->
-                            <div class="color-list section">
-                                <h5 class="pd-sub-title">Select Color</h5>
-                                <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
-                            </div>
-                            <!-- Quantity Cart -->
-                            <div class="quantity-cart section">
-                                <div class="product-quantity2">
-                                    <input type="text" value="0" id="numOfpeice">
-                                </div>
-                                <button class="add-to-cart" id="addcart">add to cart</button>
-                            </div>
-                         
-                    
-                        </div>
-                    </div>
-                </div> 
+                            <div class="row mb-40">
+                                <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
+                                    <!-- Tab panes -->
+                                    <div class="tab-content mb-10">
+                                        <div class="pro-large-img tab-pane active img-magnifier-container"  id="pro-large-img-1">
+                                        
+                                            <img name="Dress$50.00"  id="myimage" src="assets/img/product/2.jpg"  alt="" />
+                                        </div>
+                                
+                                    </div>
 
-                <div class="row mb-40">
-                    <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
-                        <!-- Tab panes -->
-                        <div class="tab-content mb-10">
-                            <div class="pro-large-img tab-pane active" id="pro-large-img-1">
-                                <img src="assets/img/product/3.jpg" alt="" />
-                            </div>
-                     
-                        </div>
-                       
-                    </div>
-                    <!-- QuickView Product Details -->
-                    <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
-                        <div class="product-details section">
-                            <!-- Title -->
-                            <h1 class="title">classic T-shirt</h1>
-                            <!-- Price Ratting -->
-                            <div class="price-ratting section">
-                                <!-- Price -->
-                                <span class="price float-left"><span class="new">€ 90.00</span></span>
-                             
-                            </div>
-                            <!-- Short Description -->
-                            <div class="short-desc section">
-                                <h5 class="pd-sub-title">Quick Overview</h5>
-                                <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (3)</span> </p>
-                            </div>
-                            <!-- Product Size -->
-                            <div class="product-size section">
-                                <h5 class="pd-sub-title">Select Size</h5>
-                                <button>s</button>
-                                <button class="active">m</button>
-                                <button>x</button>
-                                <button>xl</button>
-                            </div>
-                            <!-- Product Color -->
-                            <div class="color-list section">
-                                <h5 class="pd-sub-title">Select Color</h5>
-                                <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
-                            </div>
-                            <!-- Quantity Cart -->
-                            <div class="quantity-cart section">
-                                <div class="product-quantity2">
-                                    <input type="text" value="0" id="numOfpeice">
                                 </div>
-                                <button class="add-to-cart" id="addcart">add to cart</button>
-                            </div>
-                         
-                    
-                        </div>
-                    </div>
-                </div> 
+                                <!-- QuickView Product Details -->
+                                <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
+                                    <div class="product-details section">
+                                        <!-- Title -->
+                                        <h1 class="title">Beige Tote</h1>
+                                        <!-- Price Ratting -->
+                                        <div class="price-ratting section">
+                                            <!-- Price -->
+                                            <span class="price float-left"><span class="new">€ 80.00</span></span>
+                                        
+                                        </div>
+                                        <div class="short-desc section">
+                                            <h5 class="pd-sub-title">Quick Overview</h5>
+                                            <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (6)</span> </p>
+                                        </div>
+                                        <!-- Product Size -->
+                                        <div class="product-size section">
+                                            <h5 class="pd-sub-title">Select Size</h5>
+                                            <button>s</button>
+                                            <button class="active">m</button>
+                                            <button>x</button>
+                                            <button>xl</button>
+                                        </div>
+                                        <!-- Product Color -->
+                                        <div class="color-list section">
+                                            <h5 class="pd-sub-title">Select Color</h5>
+                                            <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
+                                        </div>
+                                        <!-- Quantity Cart -->
+                                        <div class="quantity-cart section">
+                                            <div class="product-quantity2">
+                                                <input type="text" value="0" id="numOfpeice">
+                                            </div>
+                                            <button class="add-to-cart" id="addcart" >add to cart</button>
+                                        </div>
+                                    
+                                
+                                    </div>
+                                </div>
+                            </div> 
 
-                <div class="row mb-40">
-                    <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
-                        <!-- Tab panes -->
-                        <div class="tab-content mb-10">
-                            <div class="pro-large-img tab-pane active" id="pro-large-img-1">
-                                <img src="assets/img/product/7.jpg" alt="" />
-                            </div>
-                     
-                        </div>
-                       
-                    </div>
-                    <!-- QuickView Product Details -->
-                    <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
-                        <div class="product-details section">
-                            <!-- Title -->
-                            <h1 class="title">Short Blouse</h1>
-                            <!-- Price Ratting -->
-                            <div class="price-ratting section">
-                                <!-- Price -->
-                                <span class="price float-left"><span class="new">€ 80.00</span></span>
-                             
-                            </div>
-                            <!-- Short Description -->
-                            <div class="short-desc section">
-                                <h5 class="pd-sub-title">Quick Overview</h5>
-                                <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (5)</span> </p>
-                            </div>
-                            <!-- Product Size -->
-                            <div class="product-size section">
-                                <h5 class="pd-sub-title">Select Size</h5>
-                                <button>s</button>
-                                <button class="active">m</button>
-                                <button>x</button>
-                                <button>xl</button>
-                            </div>
-                            <!-- Product Color -->
-                            <div class="color-list section">
-                                <h5 class="pd-sub-title">Select Color</h5>
-                                <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
-                            </div>
-                            <!-- Quantity Cart -->
-                            <div class="quantity-cart section">
-                                <div class="product-quantity2">
-                                    <input type="text" value="0" id="numOfpeice">
+                            <div class="row mb-40">
+                                <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
+                                    <!-- Tab panes -->
+                                    <div class="tab-content mb-10">
+                                        <div class="pro-large-img tab-pane active img-magnifier-container"  id="pro-large-img-1">
+                                        
+                                            <img  id="myimage" src="assets/img/product/3.jpg" alt="" />
+                                        </div>
+                                
+                                    </div>
+                                
                                 </div>
-                                <button class="add-to-cart" id="addcart">add to cart</button>
-                            </div>
-                         
-                    
-                        </div>
-                    </div>
-                </div> 
+                                <!-- QuickView Product Details -->
+                                <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
+                                    <div class="product-details section">
+                                        <!-- Title -->
+                                        <h1 class="title">classic T-shirt</h1>
+                                        <!-- Price Ratting -->
+                                        <div class="price-ratting section">
+                                            <!-- Price -->
+                                            <span class="price float-left"><span class="new">€ 90.00</span></span>
+                                        
+                                        </div>
+                                        <!-- Short Description -->
+                                        <div class="short-desc section">
+                                            <h5 class="pd-sub-title">Quick Overview</h5>
+                                            <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (3)</span> </p>
+                                        </div>
+                                        <!-- Product Size -->
+                                        <div class="product-size section">
+                                            <h5 class="pd-sub-title">Select Size</h5>
+                                            <button>s</button>
+                                            <button class="active">m</button>
+                                            <button>x</button>
+                                            <button>xl</button>
+                                        </div>
+                                        <!-- Product Color -->
+                                        <div class="color-list section">
+                                            <h5 class="pd-sub-title">Select Color</h5>
+                                            <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
+                                        </div>
+                                        <!-- Quantity Cart -->
+                                        <div class="quantity-cart section">
+                                            <div class="product-quantity2">
+                                                <input type="text" value="0" id="numOfpeice">
+                                            </div>
+                                            <button class="add-to-cart" id="addcart" onclick="move()">add to cart</button>
+                                        </div>
+                                    
+                                
+                                    </div>
+                                </div>
+                            </div> 
 
-                <div class="row mb-40">
-                    <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
-                        <!-- Tab panes -->
-                        <div class="tab-content mb-10">
-                            <div class="pro-large-img tab-pane active" id="pro-large-img-1">
-                                <img src="assets/img/product/12.jpg" alt="" />
-                            </div>
-                     
-                        </div>
-                       
-                    </div>
-                    <!-- QuickView Product Details -->
-                    <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
-                        <div class="product-details section">
-                            <!-- Title -->
-                            <h1 class="title">Short Blouse</h1>
-                            <!-- Price Ratting -->
-                            <div class="price-ratting section">
-                                <!-- Price -->
-                                <span class="price float-left"><span class="new">€ 80.00</span></span>
-                             
-                            </div>
-                            <div class="short-desc section">
-                                <h5 class="pd-sub-title">Quick Overview</h5>
-                                <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (4)</span> </p>
-                            </div>
-                            <!-- Product Size -->
-                            <div class="product-size section">
-                                <h5 class="pd-sub-title">Select Size</h5>
-                                <button>s</button>
-                                <button class="active">m</button>
-                                <button>x</button>
-                                <button>xl</button>
-                            </div>
-                            <!-- Product Color -->
-                            <div class="color-list section">
-                                <h5 class="pd-sub-title">Select Color</h5>
-                                <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
-                            </div>
-                            <!-- Quantity Cart -->
-                            <div class="quantity-cart section">
-                                <div class="product-quantity2">
-                                    <input type="text" value="0" id="numOfpeice">
+                            <div class="row mb-40">
+                                <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
+                                    <!-- Tab panes -->
+                                    <div class="tab-content mb-10">
+                                        <div class="pro-large-img tab-pane active" id="pro-large-img-1">
+                                            <img src="assets/img/product/7.jpg" alt="" />
+                                        </div>
+                                
+                                    </div>
+                                
                                 </div>
-                                <button class="add-to-cart" id="addcart">add to cart</button>
-                            </div>
-                         
-                    
-                        </div>
-                    </div>
-                </div> 
+                                <!-- QuickView Product Details -->
+                                <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
+                                    <div class="product-details section">
+                                        <!-- Title -->
+                                        <h1 class="title">Short Blouse</h1>
+                                        <!-- Price Ratting -->
+                                        <div class="price-ratting section">
+                                            <!-- Price -->
+                                            <span class="price float-left"><span class="new">€ 80.00</span></span>
+                                        
+                                        </div>
+                                        <!-- Short Description -->
+                                        <div class="short-desc section">
+                                            <h5 class="pd-sub-title">Quick Overview</h5>
+                                            <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (5)</span> </p>
+                                        </div>
+                                        <!-- Product Size -->
+                                        <div class="product-size section">
+                                            <h5 class="pd-sub-title">Select Size</h5>
+                                            <button>s</button>
+                                            <button class="active">m</button>
+                                            <button>x</button>
+                                            <button>xl</button>
+                                        </div>
+                                        <!-- Product Color -->
+                                        <div class="color-list section">
+                                            <h5 class="pd-sub-title">Select Color</h5>
+                                            <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
+                                        </div>
+                                        <!-- Quantity Cart -->
+                                        <div class="quantity-cart section">
+                                            <div class="product-quantity2">
+                                                <input type="text" value="0" id="numOfpeice">
+                                            </div>
+                                            <button class="add-to-cart" id="addcart" onclick="move()">add to cart</button>
+                                        </div>
+                                    
+                                
+                                    </div>
+                                </div>
+                            </div> 
 
-                <div class="row mb-40">
-                    <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
-                        <!-- Tab panes -->
-                        <div class="tab-content mb-10">
-                            <div class="pro-large-img tab-pane active" id="pro-large-img-1">
-                                <img src="assets/img/product/13.jpg" alt="" />
-                            </div>
-                     
-                        </div>
-                       
-                    </div>
-                    <!-- QuickView Product Details -->
-                    <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
-                        <div class="product-details section">
-                            <!-- Title -->
-                            <h1 class="title">Short Dress</h1>
-                            <!-- Price Ratting -->
-                            <div class="price-ratting section">
-                                <!-- Price -->
-                                <span class="price float-left"><span class="new">€ 50.00</span></span>
-                             
-                            </div>
-                            <div class="short-desc section">
-                                <h5 class="pd-sub-title">Quick Overview</h5>
-                                <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (4)</span> </p>
-                            </div>
-                            <!-- Product Size -->
-                            <div class="product-size section">
-                                <h5 class="pd-sub-title">Select Size</h5>
-                                <button>s</button>
-                                <button class="active">m</button>
-                                <button>x</button>
-                                <button>xl</button>
-                            </div>
-                            <!-- Product Color -->
-                            <div class="color-list section">
-                                <h5 class="pd-sub-title">Select Color</h5>
-                                <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
-                            </div>
-                            <!-- Quantity Cart -->
-                            <div class="quantity-cart section">
-                                <div class="product-quantity2">
-                                    <input type="text" value="0" id="numOfpeice">
+                            <div class="row mb-40">
+                                <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
+                                    <!-- Tab panes -->
+                                    <div class="tab-content mb-10">
+                                        <div class="pro-large-img tab-pane active" id="pro-large-img-1">
+                                            <img src="assets/img/product/12.jpg" alt="" />
+                                        </div>
+                                
+                                    </div>
+                                
                                 </div>
-                                <button class="add-to-cart" id="addcart">add to cart</button>
-                            </div>
-                         
-                    
-                        </div>
-                    </div>
-                </div> 
-            
-            </div>
-            <div role="tabpanel" class="pro-info-tab tab-pane fade"   id="tabtwo" >
-                <div class="row mb-40">
-                    <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
-                        <!-- Tab panes -->
-                        <div class="tab-content mb-10">
-                            <div class="pro-large-img tab-pane active" id="pro-large-img-1">
-                                <img src="assets/img/product/4.jpg" alt="" />
-                            </div>
-                     
-                        </div>
-                       
-                    </div>
-                    <!-- QuickView Product Details -->
-                    <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
-                        <div class="product-details section">
-                            <!-- Title -->
-                            <h1 class="title">Boot</h1>
-                            <!-- Price Ratting -->
-                            <div class="price-ratting section">
-                                <!-- Price -->
-                                <span class="price float-left"><span class="new">€ 40.00</span></span>
-                             
-                            </div>
-                            <div class="short-desc section">
-                                <h5 class="pd-sub-title">Quick Overview</h5>
-                                <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (2)</span> </p>
-                            </div>
-                              <!-- Product Size -->
-                              <div class="product-size section">
-                                <h5 class="pd-sub-title">Select Size</h5>
-                                <button>38</button>
-                                <button class="active">37</button>
-                                <button>40</button>
-                                <button>42</button>
-                            </div>
-                    
-                            <!-- Product Color -->
-                            <div class="color-list section">
-                                <h5 class="pd-sub-title">Select Color</h5>
-                                <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
-                            </div>
-                            <!-- Quantity Cart -->
-                            <div class="quantity-cart section">
-                                <div class="product-quantity2">
-                                    <input type="text" value="0" id="numOfpeice">
+                                <!-- QuickView Product Details -->
+                                <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
+                                    <div class="product-details section">
+                                        <!-- Title -->
+                                        <h1 class="title">Short Blouse</h1>
+                                        <!-- Price Ratting -->
+                                        <div class="price-ratting section">
+                                            <!-- Price -->
+                                            <span class="price float-left"><span class="new">€ 80.00</span></span>
+                                        
+                                        </div>
+                                        <div class="short-desc section">
+                                            <h5 class="pd-sub-title">Quick Overview</h5>
+                                            <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (4)</span> </p>
+                                        </div>
+                                        <!-- Product Size -->
+                                        <div class="product-size section">
+                                            <h5 class="pd-sub-title">Select Size</h5>
+                                            <button>s</button>
+                                            <button class="active">m</button>
+                                            <button>x</button>
+                                            <button>xl</button>
+                                        </div>
+                                        <!-- Product Color -->
+                                        <div class="color-list section">
+                                            <h5 class="pd-sub-title">Select Color</h5>
+                                            <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
+                                        </div>
+                                        <!-- Quantity Cart -->
+                                        <div class="quantity-cart section">
+                                            <div class="product-quantity2">
+                                                <input type="text" value="0" id="numOfpeice">
+                                            </div>
+                                            <button class="add-to-cart" id="addcart" onclick="move()">add to cart</button>
+                                        </div>
+                                    
+                                
+                                    </div>
                                 </div>
-                                <button class="add-to-cart" id="addcart">add to cart</button>
-                            </div>
-                         
-                    
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="row mb-40">
-                    <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
-                        <!-- Tab panes -->
-                        <div class="tab-content mb-10">
-                            <div class="pro-large-img tab-pane active" id="pro-large-img-1">
-                                <img src="assets/img/product/10.jpg" alt="" />
-                            </div>
-                     
-                        </div>
-                       
-                    </div>
-                    <!-- QuickView Product Details -->
-                    <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
-                        <div class="product-details section">
-                            <!-- Title -->
-                            <h1 class="title">Heel</h1>
-                            <!-- Price Ratting -->
-                            <div class="price-ratting section">
-                                <!-- Price -->
-                                <span class="price float-left"><span class="new">€ 20.00</span></span>
-                             
-                            </div>
-                            <div class="short-desc section">
-                                <h5 class="pd-sub-title">Quick Overview</h5>
-                                <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (4)</span> </p>
-                            </div>
-                              <!-- Product Size -->
-                              <div class="product-size section">
-                                <h5 class="pd-sub-title">Select Size</h5>
-                                <button>38</button>
-                                <button class="active">37</button>
-                                <button>40</button>
-                                <button>42</button>
-                            </div>
-                       
-                            <!-- Product Color -->
-                            <div class="color-list section">
-                                <h5 class="pd-sub-title">Select Color</h5>
-                                <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
-                            </div>
-                            <!-- Quantity Cart -->
-                            <div class="quantity-cart section">
-                                <div class="product-quantity2">
-                                    <input type="text" value="0" id="numOfpeice">
-                                </div>
-                                <button class="add-to-cart" id="addcart">add to cart</button>
-                            </div>
-                         
-                    
-                        </div>
-                    </div>
-                </div> 
+                            </div> 
 
-                <div class="row mb-40">
-                    <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
-                        <!-- Tab panes -->
-                        <div class="tab-content mb-10">
-                            <div class="pro-large-img tab-pane active" id="pro-large-img-1">
-                                <img src="assets/img/product/15.jpg" alt="" />
-                            </div>
-                     
-                        </div>
-                       
-                    </div>
-                    <!-- QuickView Product Details -->
-                    <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
-                        <div class="product-details section">
-                            <!-- Title -->
-                            <h1 class="title">classic Shoes</h1>
-                            <!-- Price Ratting -->
-                            <div class="price-ratting section">
-                                <!-- Price -->
-                                <span class="price float-left"><span class="new">€ 30.00</span></span>
-                             
-                            </div>
-                            <div class="short-desc section">
-                                <h5 class="pd-sub-title">Quick Overview</h5>
-                                <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (6)</span> </p>
-                            </div>
-                            <!-- Product Size -->
-                            <div class="product-size section">
-                                <h5 class="pd-sub-title">Select Size</h5>
-                                <button>38</button>
-                                <button class="active">37</button>
-                                <button>40</button>
-                                <button>42</button>
-                            </div>
-                          
-                            <!-- Quantity Cart -->
-                            <div class="quantity-cart section">
-                                <div class="product-quantity2">
-                                    <input type="text" value="0" id="numOfpeice">
+                            <div class="row mb-40">
+                                <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
+                                    <!-- Tab panes -->
+                                    <div class="tab-content mb-10">
+                                        <div class="pro-large-img tab-pane active" id="pro-large-img-1">
+                                            <img src="assets/img/product/13.jpg" alt="" />
+                                        </div>
+                                
+                                    </div>
+                                
                                 </div>
-                                <button class="add-to-cart" id="addcart">add to cart</button>
-                            </div>
-                         
-                    
-                        </div>
-                    </div>
-                </div> 
-            </div>
-            <div  role="tabpanel" class="pro-info-tab tab-pane fade"   id="tabthree">
-
-                <div class="row mb-40">
-                    <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
-                        <!-- Tab panes -->
-                        <div class="tab-content mb-10">
-                            <div class="pro-large-img tab-pane active" id="pro-large-img-1">
-                                <img src="assets/img/product/16.jpg" alt="" />
-                            </div>
-                     
-                        </div>
-                       
-                    </div>
-                    <!-- QuickView Product Details -->
-                    <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
-                        <div class="product-details section">
-                            <!-- Title -->
-                            <h1 class="title">classic watch</h1>
-                            <!-- Price Ratting -->
-                            <div class="price-ratting section">
-                                <!-- Price -->
-                                <span class="price float-left"><span class="new">€ 30.00</span></span>
-                             
-                            </div>
-                            <!-- Short Description -->
-                            <div class="short-desc section">
-                                <h5 class="pd-sub-title">Quick Overview</h5>
-                                <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (3)</span> </p>
-                            </div>
-                          
-                          
-                            <!-- Quantity Cart -->
-                            <div class="quantity-cart section">
-                                <div class="product-quantity2">
-                                    <input type="text" value="0" id="numOfpeice">
+                                <!-- QuickView Product Details -->
+                                <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
+                                    <div class="product-details section">
+                                        <!-- Title -->
+                                        <h1 class="title">Short Dress</h1>
+                                        <!-- Price Ratting -->
+                                        <div class="price-ratting section">
+                                            <!-- Price -->
+                                            <span class="price float-left"><span class="new">€ 50.00</span></span>
+                                        
+                                        </div>
+                                        <div class="short-desc section">
+                                            <h5 class="pd-sub-title">Quick Overview</h5>
+                                            <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (4)</span> </p>
+                                        </div>
+                                        <!-- Product Size -->
+                                        <div class="product-size section">
+                                            <h5 class="pd-sub-title">Select Size</h5>
+                                            <button>s</button>
+                                            <button class="active">m</button>
+                                            <button>x</button>
+                                            <button>xl</button>
+                                        </div>
+                                        <!-- Product Color -->
+                                        <div class="color-list section">
+                                            <h5 class="pd-sub-title">Select Color</h5>
+                                            <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
+                                        </div>
+                                        <!-- Quantity Cart -->
+                                        <div class="quantity-cart section">
+                                            <div class="product-quantity2">
+                                                <input type="text" value="0" id="numOfpeice">
+                                            </div>
+                                            <button class="add-to-cart" id="addcart" onclick="move()">add to cart</button>
+                                        </div>
+                                    
+                                
+                                    </div>
                                 </div>
-                                <button class="add-to-cart" id="addcart">add to cart</button>
-                            </div>
-                         
-                    
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="row mb-40">
-                    <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
-                        <!-- Tab panes -->
-                        <div class="tab-content mb-10">
-                            <div class="pro-large-img tab-pane active" id="pro-large-img-1">
-                                <img src="assets/img/product/17.jpg" alt="" />
-                            </div>
-                     
-                        </div>
-                       
-                    </div>
-                    <!-- QuickView Product Details -->
-                    <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
-                        <div class="product-details section">
-                            <!-- Title -->
-                            <h1 class="title">classic watch</h1>
-                            <!-- Price Ratting -->
-                            <div class="price-ratting section">
-                                <!-- Price -->
-                                <span class="price float-left"><span class="new">€ 30.00</span></span>
-                             
-                            </div>
-                            <!-- Short Description -->
-                            <div class="short-desc section">
-                                <h5 class="pd-sub-title">Quick Overview</h5>
-                                <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (5)</span> </p>
-                            </div>
+                            </div> 
                         
-                          
-                            <!-- Quantity Cart -->
-                            <div class="quantity-cart section">
-                                <div class="product-quantity2">
-                                    <input type="text" value="0" id="numOfpeice">
+                        </div>
+                        <div role="tabpanel" class="pro-info-tab tab-pane fade"   id="tabtwo" >
+                            <div class="row mb-40">
+                                <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
+                                    <!-- Tab panes -->
+                                    <div class="tab-content mb-10">
+                                        <div class="pro-large-img tab-pane active img-magnifier-container"  id="pro-large-img-1">
+                                        
+                                            <img  id="myimage" src="assets/img/product/4.jpg" alt="" />
+                                        </div>
+                                
+                                    </div>
+                                
                                 </div>
-                                <button class="add-to-cart" id="addcart">add to cart</button>
-                            </div>
-                         
-                    
-                        </div>
-                    </div>
-                </div>
-            
-            </div>
-            <div  role="tabpanel" class="pro-info-tab tab-pane fade"   id="tabfour" >
-                <div class="row mb-40">
-                    <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
-                        <!-- Tab panes -->
-                        <div class="tab-content mb-10">
-                            <div class="pro-large-img tab-pane active" id="pro-large-img-1">
-                                <img src="assets/img/product/5.jpg" alt="" />
-                            </div>
-                     
-                        </div>
-                       
-                    </div>
-                    <!-- QuickView Product Details -->
-                    <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
-                        <div class="product-details section">
-                            <!-- Title -->
-                            <h1 class="title">Hair Style</h1>
-                            <!-- Price Ratting -->
-                            <div class="price-ratting section">
-                                <!-- Price -->
-                                <span class="price float-left"><span class="new">€ 50.00</span></span>
-                             
-                            </div>
-                            <!-- Short Description -->
-                            <div class="short-desc section">
-                                <h5 class="pd-sub-title">Quick Overview</h5>
-                                <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (4)</span> </p>
-                            </div>
-                              <!-- Product Color -->
-                              <div class="color-list section">
-                                <h5 class="pd-sub-title">Select Color</h5>
-                                <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
-                                <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
-                            </div>
-                        
-                          
-                            <!-- Quantity Cart -->
-                            <div class="quantity-cart section">
-                                <div class="product-quantity2">
-                                    <input type="text" value="0" id="numOfpeice">
+                                <!-- QuickView Product Details -->
+                                <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
+                                    <div class="product-details section">
+                                        <!-- Title -->
+                                        <h1 class="title">Boot</h1>
+                                        <!-- Price Ratting -->
+                                        <div class="price-ratting section">
+                                            <!-- Price -->
+                                            <span class="price float-left"><span class="new">€ 40.00</span></span>
+                                        
+                                        </div>
+                                        <div class="short-desc section">
+                                            <h5 class="pd-sub-title">Quick Overview</h5>
+                                            <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (2)</span> </p>
+                                        </div>
+                                        <!-- Product Size -->
+                                        <div class="product-size section">
+                                            <h5 class="pd-sub-title">Select Size</h5>
+                                            <button>38</button>
+                                            <button class="active">37</button>
+                                            <button>40</button>
+                                            <button>42</button>
+                                        </div>
+                                
+                                        <!-- Product Color -->
+                                        <div class="color-list section">
+                                            <h5 class="pd-sub-title">Select Color</h5>
+                                            <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
+                                        </div>
+                                        <!-- Quantity Cart -->
+                                        <div class="quantity-cart section">
+                                            <div class="product-quantity2">
+                                                <input type="text" value="0" id="numOfpeice">
+                                            </div>
+                                            <button class="add-to-cart" id="addcart" onclick="move()">add to cart</button>
+                                        </div>
+                                    
+                                
+                                    </div>
                                 </div>
-                                <button class="add-to-cart" id="addcart">add to cart</button>
                             </div>
-                         
-                    
-                        </div>
-                    </div>
-                </div>
-                <div class="row mb-40">
-                    <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
-                        <!-- Tab panes -->
-                        <div class="tab-content mb-10">
-                            <div class="pro-large-img tab-pane active" id="pro-large-img-1">
-                                <img src="assets/img/product/6.jpg" alt="" />
-                            </div>
-                     
-                        </div>
-                       
-                    </div>
-                    <!-- QuickView Product Details -->
-                    <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
-                        <div class="product-details section">
-                            <!-- Title -->
-                            <h1 class="title">Sun Glasses</h1>
-                            <!-- Price Ratting -->
-                            <div class="price-ratting section">
-                                <!-- Price -->
-                                <span class="price float-left"><span class="new">€ 60.00</span></span>
-                             
-                            </div>
-                            <!-- Short Description -->
-                            <div class="short-desc section">
-                                <h5 class="pd-sub-title">Quick Overview</h5>
-                                <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (2)</span> </p>
-                            </div>
-                        
-                          
-                            <!-- Quantity Cart -->
-                            <div class="quantity-cart section">
-                                <div class="product-quantity2">
-                                    <input type="text" value="0" id="numOfpeice">
-                                </div>
-                                <button class="add-to-cart" id="addcart">add to cart</button>
-                            </div>
-                         
-                    
-                        </div>
-                    </div>
-                </div>
-                <div class="row mb-40">
-                    <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
-                        <!-- Tab panes -->
-                        <div class="tab-content mb-10">
-                            <div class="pro-large-img tab-pane active" id="pro-large-img-1">
-                                <img src="assets/img/product/8.jpg" alt="" />
-                            </div>
-                     
-                        </div>
-                       
-                    </div>
-                    <!-- QuickView Product Details -->
-                    <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
-                        <div class="product-details section">
-                            <!-- Title -->
-                            <h1 class="title">Leather Bag</h1>
-                            <!-- Price Ratting -->
-                            <div class="price-ratting section">
-                                <!-- Price -->
-                                <span class="price float-left"><span class="new">€ 90.00</span></span>
-                             
-                            </div>
-                            <!-- Short Description -->
-                            <div class="short-desc section">
-                                <h5 class="pd-sub-title">Quick Overview</h5>
-                                <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (4)</span> </p>
-                            </div>
-                         <!-- Product Color -->
-                         <div class="color-list section">
-                            <h5 class="pd-sub-title">Select Color</h5>
-                            <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
-                            <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
-                            <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
-                            <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
-                        </div>
                             
-                          
-                            <!-- Quantity Cart -->
-                            <div class="quantity-cart section">
-                                <div class="product-quantity2">
-                                    <input type="text" value="0" id="numOfpeice">
+                            <div class="row mb-40">
+                                <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
+                                    <!-- Tab panes -->
+                                    <div class="tab-content mb-10">
+                                        <div class="pro-large-img tab-pane active img-magnifier-container"  id="pro-large-img-1">
+                                        
+                                            <img  id="myimage" src="assets/img/product/10.jpg" alt="" />
+                                        </div>
+                                
+                                    </div>
+                                
                                 </div>
-                                <button class="add-to-cart" id="addcart">add to cart</button>
-                            </div>
-                         
-                    
+                                <!-- QuickView Product Details -->
+                                <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
+                                    <div class="product-details section">
+                                        <!-- Title -->
+                                        <h1 class="title">Heel</h1>
+                                        <!-- Price Ratting -->
+                                        <div class="price-ratting section">
+                                            <!-- Price -->
+                                            <span class="price float-left"><span class="new">€ 20.00</span></span>
+                                        
+                                        </div>
+                                        <div class="short-desc section">
+                                            <h5 class="pd-sub-title">Quick Overview</h5>
+                                            <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (4)</span> </p>
+                                        </div>
+                                        <!-- Product Size -->
+                                        <div class="product-size section">
+                                            <h5 class="pd-sub-title">Select Size</h5>
+                                            <button>38</button>
+                                            <button class="active">37</button>
+                                            <button>40</button>
+                                            <button>42</button>
+                                        </div>
+                                
+                                        <!-- Product Color -->
+                                        <div class="color-list section">
+                                            <h5 class="pd-sub-title">Select Color</h5>
+                                            <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
+                                        </div>
+                                        <!-- Quantity Cart -->
+                                        <div class="quantity-cart section">
+                                            <div class="product-quantity2">
+                                                <input type="text" value="0" id="numOfpeice">
+                                            </div>
+                                            <button class="add-to-cart" id="addcart" onclick="move()">add to cart</button>
+                                        </div>
+                                    
+                                
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="row mb-40">
+                                <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
+                                    <!-- Tab panes -->
+                                    <div class="tab-content mb-10">
+                                        <div class="pro-large-img tab-pane active img-magnifier-container"  id="pro-large-img-1">
+                                        
+                                            <img  id="myimage"src="assets/img/product/15.jpg" alt="" />
+                                        </div>
+                                
+                                    </div>
+                                
+                                </div>
+                                <!-- QuickView Product Details -->
+                                <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
+                                    <div class="product-details section">
+                                        <!-- Title -->
+                                        <h1 class="title">classic Shoes</h1>
+                                        <!-- Price Ratting -->
+                                        <div class="price-ratting section">
+                                            <!-- Price -->
+                                            <span class="price float-left"><span class="new">€ 30.00</span></span>
+                                        
+                                        </div>
+                                        <div class="short-desc section">
+                                            <h5 class="pd-sub-title">Quick Overview</h5>
+                                            <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (6)</span> </p>
+                                        </div>
+                                        <!-- Product Size -->
+                                        <div class="product-size section">
+                                            <h5 class="pd-sub-title">Select Size</h5>
+                                            <button>38</button>
+                                            <button class="active">37</button>
+                                            <button>40</button>
+                                            <button>42</button>
+                                        </div>
+                                    
+                                        <!-- Quantity Cart -->
+                                        <div class="quantity-cart section">
+                                            <div class="product-quantity2">
+                                                <input type="text" value="0" id="numOfpeice">
+                                            </div>
+                                            <button class="add-to-cart" id="addcart" onclick="move()">add to cart</button>
+                                        </div>
+                                    
+                                
+                                    </div>
+                                </div>
+                            </div> 
                         </div>
-                    </div>
-                </div>
-                <div class="row mb-40">
-                    <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
-                        <!-- Tab panes -->
-                        <div class="tab-content mb-10">
-                            <div class="pro-large-img tab-pane active" id="pro-large-img-1">
-                                <img src="assets/img/product/9.jpg" alt="" />
-                            </div>
-                     
-                        </div>
-                       
-                    </div>
-                    <!-- QuickView Product Details -->
-                    <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
-                        <div class="product-details section">
-                            <!-- Title -->
-                            <h1 class="title">Mens Belt</h1>
-                            <!-- Price Ratting -->
-                            <div class="price-ratting section">
-                                <!-- Price -->
-                                <span class="price float-left"><span class="new">€ 70.00</span></span>
-                             
-                            </div>
-                            <!-- Short Description -->
-                            <div class="short-desc section">
-                                <h5 class="pd-sub-title">Quick Overview</h5>
-                                <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (3)</span> </p>
+                        <div  role="tabpanel" class="pro-info-tab tab-pane fade"   id="tabthree">
+
+                            <div class="row mb-40">
+                                <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
+                                    <!-- Tab panes -->
+                                    <div class="tab-content mb-10">
+                                        <div class="pro-large-img tab-pane active img-magnifier-container"  id="pro-large-img-1">
+                                        
+                                            <img  id="myimage" src="assets/img/product/16.jpg" alt="" />
+                                        </div>
+                                
+                                    </div>
+                                
+                                </div>
+                                <!-- QuickView Product Details -->
+                                <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
+                                    <div class="product-details section">
+                                        <!-- Title -->
+                                        <h1 class="title">classic watch</h1>
+                                        <!-- Price Ratting -->
+                                        <div class="price-ratting section">
+                                            <!-- Price -->
+                                            <span class="price float-left"><span class="new">€ 30.00</span></span>
+                                        
+                                        </div>
+                                        <!-- Short Description -->
+                                        <div class="short-desc section">
+                                            <h5 class="pd-sub-title">Quick Overview</h5>
+                                            <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (3)</span> </p>
+                                        </div>
+                                    
+                                    
+                                        <!-- Quantity Cart -->
+                                        <div class="quantity-cart section">
+                                            <div class="product-quantity2">
+                                                <input type="text" value="0" id="numOfpeice">
+                                            </div>
+                                            <button class="add-to-cart" id="addcart" onclick="move()">add to cart</button>
+                                        </div>
+                                    
+                                
+                                    </div>
+                                </div>
                             </div>
                         
-                          
-                            <!-- Quantity Cart -->
-                            <div class="quantity-cart section">
-                                <div class="product-quantity2">
-                                    <input type="text" value="0" id="numOfpeice">
+                            <div class="row mb-40">
+                                <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
+                                    <!-- Tab panes -->
+                                    <div class="tab-content mb-10">
+                                        <div class="pro-large-img tab-pane active img-magnifier-container"  id="pro-large-img-1">
+                                        
+                                            <img  id="myimage" src="assets/img/product/17.jpg" alt="" />
+                                        </div>
+                                
+                                    </div>
+                                
                                 </div>
-                                <button class="add-to-cart" id="addcart">add to cart</button>
+                                <!-- QuickView Product Details -->
+                                <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
+                                    <div class="product-details section">
+                                        <!-- Title -->
+                                        <h1 class="title">classic watch</h1>
+                                        <!-- Price Ratting -->
+                                        <div class="price-ratting section">
+                                            <!-- Price -->
+                                            <span class="price float-left"><span class="new">€ 30.00</span></span>
+                                        
+                                        </div>
+                                        <!-- Short Description -->
+                                        <div class="short-desc section">
+                                            <h5 class="pd-sub-title">Quick Overview</h5>
+                                            <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (5)</span> </p>
+                                        </div>
+                                    
+                                    
+                                        <!-- Quantity Cart -->
+                                        <div class="quantity-cart section">
+                                            <div class="product-quantity2">
+                                                <input type="text" value="0" id="numOfpeice">
+                                            </div>
+                                            <button class="add-to-cart" id="addcart" onclick="move()">add to cart</button>
+                                        </div>
+                                    
+                                
+                                    </div>
+                                </div>
                             </div>
-                         
-                    
+                        
                         </div>
-                    </div>
-                </div>
+                        <div  role="tabpanel" class="pro-info-tab tab-pane fade"   id="tabfour" >
+                            <div class="row mb-40">
+                                <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
+                                    <!-- Tab panes -->
+                                    <div class="tab-content mb-10">
+                                        <div class="pro-large-img tab-pane active img-magnifier-container"  id="pro-large-img-1">
+                                        
+                                            <img  id="myimage" src="assets/img/product/5.jpg" alt="" />
+                                        </div>
+                                
+                                    </div>
+                                
+                                </div>
+                                <!-- QuickView Product Details -->
+                                <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
+                                    <div class="product-details section">
+                                        <!-- Title -->
+                                        <h1 class="title">Hair Style</h1>
+                                        <!-- Price Ratting -->
+                                        <div class="price-ratting section">
+                                            <!-- Price -->
+                                            <span class="price float-left"><span class="new">€ 50.00</span></span>
+                                        
+                                        </div>
+                                        <!-- Short Description -->
+                                        <div class="short-desc section">
+                                            <h5 class="pd-sub-title">Quick Overview</h5>
+                                            <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (4)</span> </p>
+                                        </div>
+                                        <!-- Product Color -->
+                                        <div class="color-list section">
+                                            <h5 class="pd-sub-title">Select Color</h5>
+                                            <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
+                                            <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
+                                        </div>
+                                    
+                                    
+                                        <!-- Quantity Cart -->
+                                        <div class="quantity-cart section">
+                                            <div class="product-quantity2">
+                                                <input type="text" value="0" id="numOfpeice">
+                                            </div>
+                                            <button class="add-to-cart" id="addcart" onclick="move()">add to cart</button>
+                                        </div>
+                                    
+                                
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-40">
+                                <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
+                                    <!-- Tab panes -->
+                                    <div class="tab-content mb-10">
+                                        <div class="pro-large-img tab-pane active img-magnifier-container"  id="pro-large-img-1">
+                                        
+                                            <img  id="myimage" src="assets/img/product/6.jpg" alt="" />
+                                        </div>
+                                
+                                    </div>
+                                
+                                </div>
+                                <!-- QuickView Product Details -->
+                                <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
+                                    <div class="product-details section">
+                                        <!-- Title -->
+                                        <h1 class="title">Sun Glasses</h1>
+                                        <!-- Price Ratting -->
+                                        <div class="price-ratting section">
+                                            <!-- Price -->
+                                            <span class="price float-left"><span class="new">€ 60.00</span></span>
+                                        
+                                        </div>
+                                        <!-- Short Description -->
+                                        <div class="short-desc section">
+                                            <h5 class="pd-sub-title">Quick Overview</h5>
+                                            <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (2)</span> </p>
+                                        </div>
+                                    
+                                    
+                                        <!-- Quantity Cart -->
+                                        <div class="quantity-cart section">
+                                            <div class="product-quantity2">
+                                                <input type="text" value="0" id="numOfpeice">
+                                            </div>
+                                            <button class="add-to-cart" id="addcart" onclick="move()">add to cart</button>
+                                        </div>
+                                    
+                                
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-40">
+                                <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
+                                    <!-- Tab panes -->
+                                    <div class="tab-content mb-10">
+                                        <div class="pro-large-img tab-pane active img-magnifier-container"  id="pro-large-img-1">
+                                        
+                                            <img  id="myimage" src="assets/img/product/8.jpg" alt="" />
+                                        </div>
+                                
+                                    </div>
+                                
+                                </div>
+                                <!-- QuickView Product Details -->
+                                <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
+                                    <div class="product-details section">
+                                        <!-- Title -->
+                                        <h1 class="title">Leather Bag</h1>
+                                        <!-- Price Ratting -->
+                                        <div class="price-ratting section">
+                                            <!-- Price -->
+                                            <span class="price float-left"><span class="new">€ 90.00</span></span>
+                                        
+                                        </div>
+                                        <!-- Short Description -->
+                                        <div class="short-desc section">
+                                            <h5 class="pd-sub-title">Quick Overview</h5>
+                                            <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (4)</span> </p>
+                                        </div>
+                                    <!-- Product Color -->
+                                    <div class="color-list section">
+                                        <h5 class="pd-sub-title">Select Color</h5>
+                                        <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
+                                        <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
+                                        <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
+                                        <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
+                                    </div>
+                                        
+                                    
+                                        <!-- Quantity Cart -->
+                                        <div class="quantity-cart section">
+                                            <div class="product-quantity2">
+                                                <input type="text" value="0" id="numOfpeice">
+                                            </div>
+                                            <button class="add-to-cart" id="addcart" onclick="move()">add to cart</button>
+                                        </div>
+                                    
+                                
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-40">
+                                <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
+                                    <!-- Tab panes -->
+                                    <div class="tab-content mb-10">
+                                        <div class="pro-large-img tab-pane active img-magnifier-container"  id="pro-large-img-1">
+                                        
+                                            <img  id="myimage" src="assets/img/product/9.jpg" alt="" />
+                                        </div>
+                                
+                                    </div>
+                                
+                                </div>
+                                <!-- QuickView Product Details -->
+                                <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
+                                    <div class="product-details section">
+                                        <!-- Title -->
+                                        <h1 class="title">Mens Belt</h1>
+                                        <!-- Price Ratting -->
+                                        <div class="price-ratting section">
+                                            <!-- Price -->
+                                            <span class="price float-left"><span class="new">€ 70.00</span></span>
+                                        
+                                        </div>
+                                        <!-- Short Description -->
+                                        <div class="short-desc section">
+                                            <h5 class="pd-sub-title">Quick Overview</h5>
+                                            <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani nab majorit.<br><br> Remaining  peices : <span id=" remain_p" style="color: blue;"> (3)</span> </p>
+                                        </div>
+                                    
+                                    
+                                        <!-- Quantity Cart -->
+                                        <div class="quantity-cart section">
+                                            <div class="product-quantity2">
+                                                <input type="text" value="0" id="numOfpeice">
+                                            </div>
+                                            <button class="add-to-cart" id="addcart" onclick="move()">add to cart</button>
+                                        </div>
+                                    
+                                
+                                    </div>
+                                </div>
+                            </div>
 
-            </div>
-        </div>
-                    
-                    
-                    
+                        </div>
+                    </div>
+                                
+                                
                     
                     </div>
-                        </div>
-            </div>
-            </div>
+                   </div>
+                 </div>
+                 </div>
             <!-- page section end -->
 
 
 
-            <!-- footer area start -->
-            <footer class="footer-area">
+             <!-- footer area start -->
+             <footer class="footer-area">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-2 col-sm-5">
                             <div class="footer-logo">
-                                <a href="#"><img src="assets/img/logo/logo.png" alt=""></a>
                                 <p>Lorem ipsum dolor , consectetur adipisicing.</p>
                                 <ul>
                                     <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
@@ -970,32 +977,33 @@
                                         <h3>categories</h3>
                                         <div class="footer-menu">
                                         <ul>
+                                            
                                             <li>
                                                 <a href="preduct-details.html#tabone"  style="margin-right: 100px;">
-                                                    <img src="assets/img/logo/1.png" style="display: inline-block; position: absolute; left: -15px;"> Clothing <span id="nofprod"> (6)</span>
-                                                  </a>
+                                                    <i class="fas fa-tshirt"></i> Clothing <span id="nofprod"> (6)</span>
+                                                    </a>
                                             </li>
                                             <li>
-                                               <a href="preduct-details.html#tabtwo" style="margin-right: 100px;">
-                                                <img src="assets/img/logo/2.png" style="display: inline-block; position: absolute; left: -15px;"> Shoes <span id="nofprod"> (3)</span>
-                                               </a>
+                                                <a href="preduct-details.html#tabtwo" style="margin-right: 100px;">
+                                                <i class="fas fa-boot"></i> Shoes <span id="nofprod"> (3)</span>
+                                                </a>
                                             </li>
                                             <li>
-                                               <a href="preduct-details.html#tabthree"  style="margin-right: 100px;">
-                                                <img src="assets/img/logo/3.png" style="display: inline-block; position: absolute; left: -15px;">Watches <span id="nofprod"> (2)</span>
-                                               </a>
+                                                <a href="preduct-details.html#tabthree"  style="margin-right: 100px;">
+                                                <i class="fas fa-clock"></i> Watches <span id="nofprod"> (2)</span>
+                                                </a>
                                             </li>
                                             <li>
                                                 <a href="preduct-details.html#tabfour"  style="margin-right: 100px;">
-                                                    <img src="assets/img/logo/4.png" style="display: inline-block; position: absolute; left: -15px;">Jewelry <span id="nofprod"> (4)</span>
+                                                    <i class="fas fa-glasses"></i> Accessory <span id="nofprod"> (4)</span>
                                                 </a>
-                                             </li>
+                                                </li>
                                         </ul>
-                                         </div>
+                                            </div>
                                     </div>
-                                 </div>
+                                    </div>
 
-                                 <div class="col-md-4 col-sm-6">
+                                    <div class="col-md-4 col-sm-6">
                                     <div class="footer-title res-mrg">
                                         <h3>Support</h3>
                                         <div class="footer-menu">
@@ -1014,18 +1022,18 @@
                                         <div class="footer-menu">
                                             <ul>
                                                 <li><a href="login.html">Login</a></li>
-                                                <li><a href="cart.html">My Cart</a></li>
+                                                <li id="footer-none"><a href="cart.html">My Cart</a></li>
                                                 <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li id="footer-none2"><a href="checkout.html">Checkout</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                               </div>
-                           </div>         
+                                </div>
+                            </div>         
                         
                         
-                       
+                        
                         <div class="col-md-3 col-sm-12">
                             <div class="footer-title res-mrg-2">
                                 <h3>newsletter</h3>
@@ -1045,9 +1053,10 @@
                         </p>
                     </div>
                 </div>
-            </footer>
-            <!-- footer area end -->
+             </footer>
+           <!-- footer area end -->
 
+          
             <!-- loginModal -->
             <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
@@ -1064,8 +1073,8 @@
                                     </div>
                                     <div class="login-form">
                                         <form action="#" method="post">
-                                            <input type="text" name="user-name" placeholder="Username">
-                                            <input type="password" name="user-password" placeholder="Password">
+                                            <input  id="uNameIN" type="text" name="user-name" placeholder="Username">
+                                            <input  id="uPwIN" type="password" name="user-password" placeholder="Password">
                                             <div class="button-box">
                                                 <div class="login-toggle-btn">
                                                     <input type="checkbox" id="remember">
@@ -1073,7 +1082,7 @@
                                                     <a href="#">Forgot Password?</a><br>
                                                     <p style=" float: right;">Create new account <a href="register.html"><span style="color: blue;">register now</span></a></p>
                                                 </div>
-                                                <button type="submit" class="default-btn floatright">Login</button>
+                                                <button id="login_btn" type="submit" onclick="check()" class="default-btn floatright">Login</button>
                                             </div>
                                         </form>
                                     </div>
@@ -1083,18 +1092,21 @@
                     </div>
                 </div>
             </div>
-            <!-- loginModal end -->
+            <!--  loginModal end -->
         </div>
         
         
       
         
         
-        
-     
+      
 
        
         <!-- all js here -->
+
+        <script src="assets/js/canvas.js"></script>
+        <script src="https://kit.fontawesome.com/6c91a9b77e.js" crossorigin="anonymous"></script>
+        <script src="assets/js/login&register.js"></script>
         <script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.meanmenu.js"></script>
@@ -1103,10 +1115,40 @@
         <script src="assets/js/owl.carousel.min.js"></script>
         <script src="assets/js/jquery.counterup.min.js"></script>
         <script src="assets/js/waypoints.min.js"></script>
-        <script src="assets/js/ajax-mail.js"></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
         <script type="text/javascript" src="assets/js/custom.js"></script>
+        <script>
+           $(document).ready(function(){
+
+            $("img").click(function() {
+              magnify("myimage", 3);
+              });
+
+              var login=localStorage.getItem("login");
+             var username = localStorage.getItem ("username");
+             if(login){
+                $(".user").hide();
+                $('.add-to-cart').prop('disabled', false);
+                $('.user-none').show();
+                $('#none').show();
+                $('#footer-none').show();
+                $('#footer-none2').show();
+                $(".logOut").show();
+                $(".text").text("Hello " +username);
+             }
+             else{
+            
+                 $('.add-to-cart').prop('disabled', true);
+                 $('.user-none').hide();
+                  $('#none').hide();
+                 $('#footer-none').hide();
+                 $('#footer-none2').hide();
+                 $('.logOut').hide();
+                  }
+            });
+
+        </script>
 
 
     </body>

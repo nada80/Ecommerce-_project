@@ -1,11 +1,5 @@
-/*-----------------------------------------------------------------------------------
-    Template Name:  Mira - Minimal eCommerce HTML Template
-    Description: This is html5 template
-    Author: HasTech
-    Version: 1.0
------------------------------------------------------------------------------------
-    
-    [Table of contents] 
+
+/*
 	
     1. Template default css (assets/css/shortcodes/bundle.css)
     2. Header css (assets/css/shortcodes/header.css)
@@ -1259,17 +1253,70 @@ a#scrollUp:hover {
 }
 
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body .anime {
+  font-family:'Roboto';
+  font-weight:300;
+  font-size:45px;
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform: translate3d(0,0,0);
+}
+
+.anime {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.anime:first-of-type {   
+  animation: showup 7s infinite;
+}
+
+.anime:last-of-type {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+.anime:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+.img-magnifier-container {
+    position:relative;
+  }
+  
+  .img-magnifier-glass {
+    position: absolute;
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    /*Set the size of the magnifier glass:*/
+    width: 100px;
+    height: 100px;
+  }
